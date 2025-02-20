@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  height: 10vh;
+  background: transparent;
+  z-index: 1000;
+}
+
+.site-logo img {
+  height: 40px; 
+}
+
+/* Menu Links and Logos2 */
+.menu-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+}
+
+.menu-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: white; 
+  font-weight: normal;
+}
+
+.logos2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.logos2 img {
+  height: 30px; 
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu .bar {
+  width: 25px;
+  height: 3px;
+  background: white; 
+}
+
+.popup-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.popup-menu ul li {
+  margin: 1.5rem 0;
+}
+
+.popup-menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 0 0px;
+  }
+
+  .site-logo{
+    padding-left: 20px;
+  }
+
+  .menu-container {
+    display: none; 
+  }
+
+  .hamburger-menu {
+    display: flex; 
+    font-size: 24px; 
+    cursor: pointer; 
+    padding-right: 20px;
+  }
+}
