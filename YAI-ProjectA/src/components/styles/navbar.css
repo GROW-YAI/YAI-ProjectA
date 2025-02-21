@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   width: 95%;
-  height: 10vh;
+  height: 7vh;
   background: transparent;
   z-index: 1000;
 }
@@ -29,6 +29,7 @@
   gap: 1.5rem;
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
 
 .menu-links a {

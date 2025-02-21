@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <section id="home" className="hero">
             <div className="intro-text">
-                <p>farm with Attrams</p>
+                {/* <p style={{color: "#d3940b"}}>farm with Attrams</p> */}
                 <h1>Sustainable Agriculture with Organic Fertilizer</h1>
                 <hr />
                 <p>Growing Greener with Organic Fertilizers for a Healthier Planet</p>
@@ -14,7 +14,7 @@ const Hero = () => {
                     height: '50px',    
                     fontSize: '16px',  
                     padding: '10px 20px', 
-                    backgroundColor: '#D8FF9A', 
+                    backgroundColor: '#d3940b', 
                     color: 'black',     
                     border: 'none',  
                     borderRadius: '30px', 
