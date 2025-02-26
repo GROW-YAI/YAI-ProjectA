@@ -8,28 +8,28 @@ const Choose = () => {
             
             <div className="choose-sub"> 
             <div> {/* 1 */}
-                <img src="/eco.png" alt="" style={{width: "120px", height: "auto"}} />
-                <p>Sustainable</p>
+                <img src="/100-percent (1).png" alt="" style={{width: "100px", height: "auto"}} />
+                <p className="choose-text">Eco-friendly</p>
             </div>
 
             <div>  {/* 2 */}
-            <img src="/eco.png" alt="" style={{width: "120px", height: "auto"}} />
-            <p>Sustainable</p>
+            <img src="/pest-control.png" alt="" style={{width: "100px", height: "auto"}} />
+            <p className="choose-text">Dual-purpose</p>
             </div>
 
             <div> {/* 3 */}
-            <img src="/eco.png" alt="" style={{width: "120px", height: "auto"}} />
-            <p>Sustainable</p>
+            <img src="/nutrient.png" alt="" style={{width: "100px", height: "auto"}} />
+            <p className="choose-text">Nutrient-rich</p>
             </div>
 
             <div>{/* 4 */}
-            <img src="/eco.png" alt="" style={{width: "120px", height: "auto"}} />
-            <p>Sustainable</p>
+            <img src="/yield.png" alt="" style={{width: "100px", height: "auto"}} />
+            <p className="choose-text">Increase Yield</p>
             </div>
 
             <div> {/* 5 */}
-            <img src="/eco.png" alt="" style={{width: "120px", height: "auto"}} />
-            <p>Sustainable</p>
+            <img src="/eco.png" alt="" style={{width: "100px", height: "auto"}} />
+            <p className="choose-text">Cost Effective</p>
             </div>
 
             </div>

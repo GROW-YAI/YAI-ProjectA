@@ -78,21 +78,20 @@
   color: black;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .navbar-content {
-    padding: 0 1rem; /* Add padding for smaller screens */
+    padding: 0 1rem; 
   }
 
   .menu-container {
-    display: none; /* Hide desktop menu on mobile */
+    display: none; 
   }
 
   .hamburger-menu {
-    display: flex; /* Show hamburger menu on mobile */
+    display: flex; 
   }
 
   .popup-menu {
-    display: block; /* Show popup menu when isMenuOpen is true */
+    display: block; 
   }
 }

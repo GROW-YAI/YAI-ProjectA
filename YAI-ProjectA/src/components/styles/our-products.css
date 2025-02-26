@@ -16,7 +16,7 @@
 
 .product {
     background-color: #f1f1f1;
-    height: 350px;
+    height: 250px;
     width: 250px;
     display: flex;
     flex-direction: column;
@@ -29,6 +29,8 @@
 .p-text {
     text-align: center;
     padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .product-sub {
@@ -57,3 +59,4 @@
     align-items: center;
     text-align: center;
 }
+

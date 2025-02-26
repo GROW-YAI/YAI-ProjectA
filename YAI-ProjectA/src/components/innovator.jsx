@@ -3,11 +3,9 @@ import "./styles/innovator.css";
 
 const Innovator=()=> {
     return (<section className="innovator-section" > <div className="innovator-container" > {
-            /* First Div: Image */
         }
 
         <div className="innovator-image" > <img src="/man.png" alt="Innovator" /> </div> {
-            /* Second Div: Text Content */
         }
 
         <div className="innovator-content" > <h2 style= {

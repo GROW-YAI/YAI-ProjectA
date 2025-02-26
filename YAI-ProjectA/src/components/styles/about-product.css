@@ -1,5 +1,5 @@
 .section-3 {
-    background-color: white;
+    background-color: #f1f1f1;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -12,21 +12,20 @@
     align-items: center;
     width: 83%;
     max-width: 1200px;
-    height: 90vh;
+    height: 80vh;
   }
   
   .product-about-text {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
   }
   
   .product-image {
-    width: 50%; /* Adjust as needed */
+    width: 50%; 
   }
   
-  /* Responsive Styles */
   @media (max-width: 768px) {
     .about-product {
       flex-direction: column;

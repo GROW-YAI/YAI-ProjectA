@@ -3,7 +3,7 @@ import "./styles/our-products.css"
 
 const Products = () => {
     return (
-        <section className="section-4">
+        <section id="products" className="section-4">
             <div>
                 <h1 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold" }}>Products in Our Catalogue</h1>
 
@@ -11,30 +11,34 @@ const Products = () => {
 
                     {/* 1 */}
                     <div className="product" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", minHeight: "400px" }}>
-                        <div style={{ height: "50px", width: "50px", alignSelf: "flex-end" }}> <img src="" alt="" /></div>
+                        <div style={{ alignSelf: "flex-end", padding:"10px" }}>
+                        <button style={{backgroundColor: "white", border: "0.5px solid #559409", padding: "5px 10px", borderRadius: "10px", color: "#559409" }}>Shop</button></div>
                         <div><img src="/fert-nbg2.png" alt="" style={{ width: "250px" }} /></div>
-                        <p className="p-text">Product 1</p>
+                        <p className="p-text">Dry banana peels</p>
                     </div>
 
                     {/* 2 */}
                     <div className="product" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", minHeight: "400px" }}>
-                        <div style={{ height: "50px", width: "50px", alignSelf: "flex-end" }}> <img src="" alt="" /></div>
+                    <div style={{ alignSelf: "flex-end", padding:"10px" }}>
+                    <button style={{backgroundColor: "white", border: "0.5px solid #559409", padding: "5px 10px", borderRadius: "10px", color: "#559409" }}>Shop</button></div>
                         <div><img src="/fert-nbg2.png" alt="" style={{ width: "250px" }} /></div>
-                        <p className="p-text">Product 1</p>
+                        <p className="p-text">Dry mango peels</p>
                     </div>
 
                     {/* 3 */}
                     <div className="product" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", minHeight: "400px" }}>
-                        <div style={{ height: "50px", width: "50px", alignSelf: "flex-end" }}> <img src="" alt="" /></div>
+                    <div style={{ alignSelf: "flex-end", padding:"10px" }}>
+                    <button style={{backgroundColor: "white", border: "0.5px solid #559409", padding: "5px 10px", borderRadius: "10px", color: "#559409" }}>Shop</button></div>
                         <div><img src="/fert-nbg2.png" alt="" style={{ width: "250px" }} /></div>
-                        <p className="p-text">Product 1</p>
+                        <p className="p-text">Dry pineapple peels</p>
                     </div>
 
                     {/* 4 */}
                     <div className="product" style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "space-between", minHeight: "400px" }}>
-                        <div style={{ height: "50px", width: "50px", alignSelf: "flex-end" }}> <img src="" alt="" /></div>
+                    <div style={{ alignSelf: "flex-end", padding:"10px" }}>
+                    <button style={{backgroundColor: "white", border: "0.5px solid #559409", padding: "5px 10px", borderRadius: "10px", color: "#559409" }}>Shop</button></div>
                         <div><img src="/fert-nbg2.png" alt="" style={{ width: "250px" }} /></div>
-                        <p className="p-text">Product 1</p>
+                        <p className="p-text">Dry orange peels</p>
                     </div>
 
                 </div>
