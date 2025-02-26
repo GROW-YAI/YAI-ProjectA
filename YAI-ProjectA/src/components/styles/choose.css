@@ -1,11 +1,16 @@
-.section-2{
+.section-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60vh;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
 }
 
-.choose-sub{
-    display: flex;   
+.choose-sub {
+    display: flex;
+    padding-top: 50px;
+    column-gap: 40px;
 }
