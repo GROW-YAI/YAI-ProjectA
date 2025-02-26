@@ -5,7 +5,7 @@ const Products = () => {
     return (
         <section className="section-4">
             <div>
-                <h1 style={{ textAlign: "center", fontSize: "40px", fontWeight: "300" }}>Products in Our Catalogue</h1>
+                <h1 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold" }}>Products in Our Catalogue</h1>
 
                 <div className="products">
 
