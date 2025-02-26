@@ -2,27 +2,21 @@ import React from "react";
 import "./styles/hero.css";
 
 const Hero = () => {
-    return (
-        <section id="home" className="hero">
-            <div className="intro-text">
-                {/* <p style={{color: "#d3940b"}}>farm with Attrams</p> */}
-                <h1>Sustainable Agriculture with Organic Fertilizer</h1>
-                <hr />
-                <p>Growing Greener with Organic Fertilizers for a Healthier Planet</p>
-                <button style={{
-                    width: '150px',    
-                    height: '50px',    
-                    fontSize: '16px',  
-                    padding: '10px 20px', 
-                    backgroundColor: '#d3940b', 
-                    color: 'black',     
-                    border: 'none',  
-                    borderRadius: '30px', 
-                    cursor: 'pointer'  
-                }}>Learn more</button>
-            </div>
-        </section>
-    );
+  return (
+    <section id="home" className="hero">
+      <div className="hero-content"> 
+        <div className="intro-text">
+          <h1 style={{ fontFamily: "Inter, serif", fontSize: "30px", fontWeight: "200" }}>ASAASEPA</h1>
+          <h1 style={{ fontSize: "60px" }}>Dual-purpose Organic Fertilizer and Pesticide</h1>
+          <p style={{ fontFamily: "Inter, serif", fontSize: "20px", fontWeight: "200" }}>Grow More, Worry Less</p>
+          <button style={{display: "in-line-block",  width: "150px", height: "50px", borderRadius: "30px", backgroundColor: "#559409", border: "none", color: "white", fontSize: "16px"}}>Learn more</button>
+        </div>
+        <div className="image-container">
+          <img src="/fert-nbg2.png" alt="Organic Fertilizer" />
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Hero;
