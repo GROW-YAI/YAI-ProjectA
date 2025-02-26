@@ -1,21 +1,24 @@
 .section-3{
     background-color: #f1f1f159;
     width: 100vw;
+   
 }
 
 .about-product{
     display: flex;
     height: 90vh;
-    justify-content:space-evenly;
+    justify-content:center;
+    align-content: center;
     align-items: center;
+    width: 80%;
 }
 
 .product-about-text{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-    width: 40%;
-    padding-left: 6%;
+    width: 60%;
+    padding-left: 10.5%;
 }
 
 .p-text{
