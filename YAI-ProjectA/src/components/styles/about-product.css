@@ -13,6 +13,7 @@
     width: 83%;
     max-width: 1200px;
     height: 90vh;
+    column-gap: 30px;
   }
   
   .product-about-text {
@@ -23,7 +24,7 @@
   }
   
   .product-image {
-    width: 50%; /* Adjust as needed */
+    width: 55%; /* Adjust as needed */
   }
   
   /* Responsive Styles */
