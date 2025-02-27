@@ -23,7 +23,7 @@ const Navbar = () => {
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <img src="/cart (2).png" alt="Logo 2" />
+          <img src="/shopping-cart (2).png" alt="Logo 2 " style={{width: "40px"}} />
         </div>
 
         <div className="hamburger-menu" onClick={toggleMenu}>
