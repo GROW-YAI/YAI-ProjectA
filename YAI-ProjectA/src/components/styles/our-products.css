@@ -5,6 +5,8 @@
     align-items: center;
     height: 120vh;
     padding-top: 80px;
+    /* padding-bottom: 30px; */
+
 }
 
 .products {
@@ -28,9 +30,9 @@
 
 .p-text {
     text-align: center;
-    padding-bottom: 20px;
     font-weight: 500;
     font-size: 18px;
+    padding: 20px;
 }
 
 .product-sub {
