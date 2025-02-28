@@ -5,6 +5,8 @@ import Choose from "./components/choose.jsx";
 import AboutProduct from "./components/about-product.jsx";
 import Products from "./components/our-products.jsx";
 import Innovator from "./components/innovator.jsx";
+import Testimonials from "./components/testimonial.jsx";
+import ContactForm from "./components/contact.jsx";
 const App = () => {
   return (
     <div>
@@ -13,7 +15,9 @@ const App = () => {
       <Choose />
       <AboutProduct />
       <Products />
+      <Testimonials />
       <Innovator />
+      <ContactForm />
     </div>
   );
 };

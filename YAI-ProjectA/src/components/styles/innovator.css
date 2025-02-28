@@ -50,15 +50,15 @@
     }
   
     .innovator-image {
-      height: 300px; /* Adjust height for smaller screens */
+      height: 300px; 
     }
   
     .innovator-content {
       text-align: center;
-      align-items: center; /* Center text content on mobile */
+      align-items: center; 
     }
   
     .innovator-content p {
-      width: 100%; /* Full width for paragraph on mobile */
+      width: 100%; 
     }
   }

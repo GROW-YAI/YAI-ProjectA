@@ -11,9 +11,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-content">
-        <div className="site-logo">
-          <img src="/asaase.png" alt="Logo 1" style={{ width: "250px", height: "auto", paddingTop: "30px", paddingBottom: "10px"}} />
-        </div>
+        {/* <div className="site-logo"> */}
+          <img src="/asaase111.png" alt="Logo 1" style={{ width: "200px", height: "auto", paddingTop: "0px", paddingBottom: "0px"}} />
+        {/* </div> */}
 
         <div className="menu-container">
           <ul className="menu-links">
@@ -23,7 +23,7 @@ const Navbar = () => {
             <li><a href="#services">Services</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <img src="/shopping-cart (2).png" alt="Logo 2 " style={{width: "40px"}} />
+          <img src="/shopping-cart (2).png" alt="Logo 2 " style={{width: "30px"}} />
         </div>
 
         <div className="hamburger-menu" onClick={toggleMenu}>
