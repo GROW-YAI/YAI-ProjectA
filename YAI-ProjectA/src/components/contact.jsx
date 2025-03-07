@@ -1,141 +1,63 @@
-import React, { useState } from "react";
-import "./styles/contact.css"; // Create this CSS file for styling
+import React from "react";
+import "./styles/contact.css";
+import {
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaFacebook,
+  FaInstagram,
+  FaTiktok,
+  FaLinkedin
+} from "react-icons/fa";
 
-const ContactForm = () => {
-    // State to manage form inputs
-    const [formData, setFormData] = useState({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-    });
-
-    // State to manage form errors
-    const [errors, setErrors] = useState({});
-
-    // Handle input changes
-    const handleInputChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value,
-        });
-    };
-
-    // Validate form inputs
-    const validateForm = () => {
-        const newErrors = {};
-
-        if (!formData.name.trim()) {
-            newErrors.name = "Name is required";
-        }
-
-        if (!formData.email.trim()) {
-            newErrors.email = "Email is required";
-        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            newErrors.email = "Email is invalid";
-        }
-
-        if (!formData.subject.trim()) {
-            newErrors.subject = "Subject is required";
-        }
-
-        if (!formData.message.trim()) {
-            newErrors.message = "Message is required";
-        }
-
-        setErrors(newErrors);
-        return Object.keys(newErrors).length === 0; // Return true if no errors
-    };
-
-    // Handle form submission
-    const handleSubmit = (e) => {
-        e.preventDefault();
-
-        if (validateForm()) {
-            // Submit the form (you can replace this with an API call)
-            console.log("Form submitted:", formData);
-            alert("Thank you for contacting us! We'll get back to you soon.");
-            setFormData({ name: "", email: "", subject: "", message: "" }); // Reset form
-        } else {
-            console.log("Form has errors");
-        }
-    };
-
-    return (
-        <section id="contact" className="contact-section">
-            <div className="container">
-                <h2 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold", marginBottom: "40px" }}>
-                    Contact Us
-                </h2>
-
-                <form onSubmit={handleSubmit} className="contact-form">
-                    {/* Name Field */}
-                    <div className="form-group">
-                        <label htmlFor="name">Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleInputChange}
-                            placeholder="Enter your name"
-                        />
-                        {errors.name && <span className="error">{errors.name}</span>}
-                    </div>
-
-                    {/* Email Field */}
-                    <div className="form-group">
-                        <label htmlFor="email">Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleInputChange}
-                            placeholder="Enter your email"
-                        />
-                        {errors.email && <span className="error">{errors.email}</span>}
-                    </div>
-
-                    {/* Subject Field */}
-                    <div className="form-group">
-                        <label htmlFor="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            value={formData.subject}
-                            onChange={handleInputChange}
-                            placeholder="Enter the subject"
-                        />
-                        {errors.subject && <span className="error">{errors.subject}</span>}
-                    </div>
-
-                    {/* Message Field */}
-                    <div className="form-group">
-                        <label htmlFor="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            value={formData.message}
-                            onChange={handleInputChange}
-                            placeholder="Enter your message"
-                            rows="5"
-                        />
-                        {errors.message && <span className="error">{errors.message}</span>}
-                    </div>
-
-                    {/* Submit Button */}
-                    <div className="form-group">
-                        <button type="submit" className="submit-button">
-                            Send Message
-                        </button>
-                    </div>
-                </form>
+const ContactUs = () => {
+  return (
+    <>
+      <section className="contact-section">
+        <h1 className="contact-title">Contact Us</h1>
+        <div className="contact-container">
+          <div className="contact-left">
+            <p>
+              <strong className="contact-heading">For more info, contact us via:</strong>
+            </p>
+            <div className="contact-info">
+              <p><FaPhone className="icon flip-icon" /> (233) 555-010-234</p>
+              <p><FaEnvelope className="icon" /> attrams@gmail.com</p>
+              <p><FaMapMarkerAlt className="icon" /> UMaT Campus, Tarkwa</p>
             </div>
-        </section>
-    );
+
+            <div className="socials">
+              <p><strong className="contact-heading">Follow Us on Social Media</strong></p>
+              <div className="social-icons">
+                <FaFacebook className="icon" />
+                <FaInstagram className="icon" />
+                <FaTiktok className="icon" />
+                <FaLinkedin className="icon" />
+              </div>
+            </div>
+          </div>
+
+          <div className="contact-right">
+            <p style={{paddingBottom: "20px"}}><strong>Send message</strong></p>
+            <form>
+              <div className="form-group">
+                <input type="text" placeholder="Name" />
+                <input type="text" placeholder="Phone Number" />
+              </div>
+              <input type="email" placeholder="Email Id" />
+              <input type="text" placeholder="Subject" />
+              <textarea placeholder="Your message" className="textarea"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer className="copyright-section">
+        <p>&copy; {new Date().getFullYear()} Asaasepa. All rights reserved.</p>
+      </footer>
+    </>
+  );
 };
 
-export default ContactForm;
+export default ContactUs;

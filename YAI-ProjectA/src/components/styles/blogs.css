@@ -1,0 +1,73 @@
+/* Blogs Section Styling */
+.blogsSection {
+    padding-top: 100px;
+    padding-bottom: 30px;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  
+  .tilesContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Blog Tile Styling */
+  .tile {
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    overflow: hidden; /* Ensures the image stays within the tile */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .imageContainer {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    overflow: hidden;
+  }
+  
+  .blogImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+  }
+  
+  .tile .title {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin: 15px 20px 10px;
+  }
+  
+  .tile .excerpt {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 20px 15px;
+  }
+  
+  .tile .readMore {
+    display: inline-block;
+    padding: 15px 20px;
+    background-color: #559409;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    margin: 0 20px 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .tile .readMore:hover {
+    background-color: #219653;
+  }

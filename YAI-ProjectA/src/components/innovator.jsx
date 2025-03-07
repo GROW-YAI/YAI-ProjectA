@@ -5,18 +5,18 @@ const Innovator=()=> {
     return (<section className="innovator-section" > <div className="innovator-container" > {
         }
 
-        <div className="innovator-image" > <img src="/man.png" alt="Innovator" /> </div> {
+        <div className="innovator-image" > <img src="/ino.JPG" alt="Innovator" /> </div> {
         }
 
         <div className="innovator-content" > <h2 style= {
                 {
-                fontSize: "40px", fontWeight: "600", marginBottom: "16px"
+                fontWeight: "bold", fontSize: "18px", marginBottom: "16px"
             }
         }
 
         >Meet The Innovator</h2> <h3 style= {
                 {
-                fontSize: "20px", fontWeight: "300", marginBottom: "12px"
+                    fontWeight: "200", fontSize: "40px", marginBottom: "12px"
             }
         }
 
@@ -32,3 +32,5 @@ const Innovator=()=> {
 ;
 
 export default Innovator;
+
+// follow Innovator on social media
