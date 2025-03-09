@@ -38,7 +38,7 @@ const ContactUs = () => {
           </div>
 
           <div className="contact-right">
-            <p style={{paddingBottom: "20px"}}><strong>Send message</strong></p>
+            <p style={{paddingBottom: "20px", fontSize: "20px", opacity: "0.9"}}><strong>Send message</strong></p>
             <form>
               <div className="form-group">
                 <input type="text" placeholder="Name" />

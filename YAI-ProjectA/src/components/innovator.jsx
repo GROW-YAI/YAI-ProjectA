@@ -10,7 +10,7 @@ const Innovator=()=> {
 
         <div className="innovator-content" > <h2 style= {
                 {
-                fontWeight: "bold", fontSize: "18px", marginBottom: "16px"
+                fontWeight: "bold", fontSize: "25px", marginBottom: "16px"
             }
         }
 
@@ -22,7 +22,7 @@ const Innovator=()=> {
 
         >Derrick Larbi Attrams</h3> <p style= {
                 {
-                fontSize: "16px", opacity: "0.85", lineHeight: "1.6", width: "100%", fontWeight: "300"
+                fontSize: "16px", opacity: "0.85",  width: "100%"
             }
         }
 
