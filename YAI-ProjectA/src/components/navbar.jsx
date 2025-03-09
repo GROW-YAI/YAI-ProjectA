@@ -20,7 +20,7 @@ const Navbar = () => {
             <li><a href="#home">Home</a></li>
             <li><a href="#product-info">About</a></li>
             <li><a href="#products">Products</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#services">Testimonials</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
           <img src="/shopping-cart (2).png" alt="Logo 2 " style={{width: "30px"}} />
