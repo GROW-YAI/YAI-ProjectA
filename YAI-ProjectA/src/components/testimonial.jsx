@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./styles/testimonials.css"; 
 
-const Testimonials = () => {
+const Testimonials = forwardRef((props, ref) => {
     const testimonials = [
         {
             id: 1,
@@ -53,7 +53,7 @@ const Testimonials = () => {
     };
 
     return (
-        <section id="testimonials" className="testimonials-section">
+        <section ref={ref} id="testimonials" className="testimonials-section">
             <div className="testimonial-container">
                 <h2 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold", marginBottom: "40px" }}>
                     What Our Clients Say
@@ -87,6 +87,6 @@ const Testimonials = () => {
             </div>
         </section>
     );
-};
+});
 
 export default Testimonials;

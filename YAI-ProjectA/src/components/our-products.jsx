@@ -1,7 +1,7 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./styles/our-products.css";
 
-const Products = () => {
+const Products = forwardRef((props, ref) => {
     // Array of product data
     const products = [
         { id: 1, name: "Dry banana peels", image: "/fert-nbg2.png" },
@@ -11,7 +11,7 @@ const Products = () => {
     ];
 
     return (
-        <section id="products" className="section-4">
+        <section ref={ref} id="products" className="section-4">
             <div>
                 <h1 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold" }}>
                     Products in Our Catalogue
@@ -31,19 +31,7 @@ const Products = () => {
                                 minHeight: "350px",
                             }}
                         >
-                            <div style={{ alignSelf: "flex-end", padding: "10px" }}>
-                                {/* <button
-                                    style={{
-                                        backgroundColor: "#9CBF1C",
-                                        padding: "5px 10px",
-                                        borderRadius: "10px",
-                                        color: "white",
-                                        border: "none",
-                                    }}
-                                >
-                                    Shop
-                                </button> */}
-                            </div>
+                            <div style={{ alignSelf: "flex-end", padding: "10px" }}></div>
                             <div>
                                 <img src={product.image} alt="" style={{ width: "250px" }} />
                             </div>
@@ -76,6 +64,6 @@ const Products = () => {
             </section>
         </section>
     );
-};
+});
 
 export default Products;

@@ -1,9 +1,9 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./styles/hero.css";
 
-const Hero = () => {
+const Hero = forwardRef((props, ref) => {
   return (
-    <section id="home" className="hero">
+    <section ref={ref} className="hero">
       <div className="hero-content"> 
         <div className="intro-text">
           <h1 style={{ fontFamily: "Inter, serif", fontSize: "30px", fontWeight: "200" }}>ASAASEPA</h1>
@@ -17,6 +17,6 @@ const Hero = () => {
       </div>
     </section>
   );
-};
+});
 
 export default Hero;

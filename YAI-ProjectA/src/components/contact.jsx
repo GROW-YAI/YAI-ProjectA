@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./styles/contact.css";
 import {
   FaPhone,
@@ -10,10 +10,10 @@ import {
   FaLinkedin
 } from "react-icons/fa";
 
-const ContactUs = () => {
+const ContactUs = forwardRef((props, ref) => {
   return (
     <>
-      <section className="contact-section">
+      <section ref={ref} id="contact" className="contact-section">
         <h1 className="contact-title">Contact Us</h1>
         <div className="contact-container">
           <div className="contact-left">
@@ -38,7 +38,9 @@ const ContactUs = () => {
           </div>
 
           <div className="contact-right">
-            <p style={{paddingBottom: "20px", fontSize: "20px", opacity: "0.9"}}><strong>Send message</strong></p>
+            <p style={{ paddingBottom: "20px", fontSize: "20px", opacity: "0.9" }}>
+              <strong>Send message</strong>
+            </p>
             <form>
               <div className="form-group">
                 <input type="text" placeholder="Name" />
@@ -58,6 +60,6 @@ const ContactUs = () => {
       </footer>
     </>
   );
-};
+});
 
 export default ContactUs;
