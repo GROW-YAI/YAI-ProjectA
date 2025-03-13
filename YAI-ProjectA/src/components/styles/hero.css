@@ -7,7 +7,6 @@
   align-items: center;
   color: black;
   z-index: 1;
-
 }
 
 .hero-content {
@@ -41,34 +40,70 @@
   height: auto;
 }
 
+/* New mobile-specific image container */
+.image-container-mobile {
+  display: none; /* Hidden by default */
+}
+
+/* Media query for phone screens */
 @media (max-width: 768px) {
-
-
   .hero-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
-    padding-top: 13vh;
+    padding-top: 12vh;
   }
 
   .intro-text {
     max-width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px; /* Adjust spacing for mobile */
+  }
+  
+
+  .intro-text h1 {
+    font-size: 30px !important;
+    margin: 0; /* Remove default margins */
   }
 
-  .intro-text h1{
-    font-size: 30px !important; 
+  .hero .intro-text h1:first-of-type {
+    font-size: 20px !important; /* Even smaller font size for mobile */
+    align-self: flex-start; /* Align to the left */
+    text-align: left; /* Ensure text alignment is left */
+    width: 100%; /* Take full width to align properly */
   }
 
+  .image-container-mobile {
+    display: block; /* Show mobile image container */
+    max-width: 100%;
+    /* margin: 10px 0;  */
+    order: 2; /* Image between the two <h1> elements */
+  }
+
+  .intro-text h1:last-of-type {
+    order: 3; /* "Organic Fertilizer and Pesticide" text */
+  }
+
+  .intro-text p {
+    order: 4; /* "Grow More, Worry Less" text */
+    margin: 0; /* Remove default margins */
+  }
+
+  .intro-text button {
+    order: 5; /* Button last */
+    margin-top: 10px; /* Add spacing between text and button */
+  }
 
   .image-container {
-    max-width: 100%;
-    margin-top: 20px;
+    display: none; /* Hide desktop image container on mobile */
   }
 
-  .image-container img{
-    max-width:200px;
+  .image-container-mobile img {
+    max-width: 300px;
+    height: auto;
   }
 }
-
- 
