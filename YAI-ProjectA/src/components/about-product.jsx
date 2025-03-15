@@ -25,7 +25,7 @@ const AboutProduct = forwardRef((props, ref) => {
                     </button>
                 </div>
 
-                <div style={{ width: "50%" }}>
+                <div className="product-image">
                     <img src="/Component 3.png" alt="" style={{ width: "600px", height: "auto" }} />
                 </div>
             </div>

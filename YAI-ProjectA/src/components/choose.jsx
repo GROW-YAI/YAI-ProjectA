@@ -4,7 +4,7 @@ import "./styles/choose.css"
 const Choose = () => {
     return (
         <section className="section-2">
-            <h1 style={{fontSize: "40px", fontWeight: "bold"}}>Why Choose Us</h1>
+            <h1 className="choose-title" style={{fontSize: "40px", fontWeight: "bold"}}>Why Choose Us</h1>
             
             <div className="choose-sub"> 
             <div> {/* 1 */}

@@ -55,9 +55,9 @@ const Testimonials = forwardRef((props, ref) => {
     return (
         <section ref={ref} id="testimonials" className="testimonials-section">
             <div className="testimonial-container">
-                <h2 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold", marginBottom: "40px" }}>
+                <h1 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold", marginBottom: "40px" }}>
                     What Our Clients Say
-                </h2>
+                </h1>
 
                 <div className="testimonials-grid">
                     {testimonials.map((testimonial) => (

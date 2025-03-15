@@ -17,7 +17,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .testimonials-grid {
@@ -116,4 +115,32 @@
     width: 50%;
     overflow: hidden;
     color: #ffc107;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .testimonials-section {
+        height: auto; /* Adjust height to fit content */
+        padding-top: 80px; /* Add padding for better spacing */
+    }
+
+    .testimonial-container h1 {
+        font-size: 30px !important; /* Set title font size to 30px for mobile */
+        margin-bottom: 20px !important; /* Reduce margin for better spacing */
+    }
+
+    .testimonials-grid {
+        width: 100%; /* Full width for the slider */
+    }
+
+    .testimonial-card {
+        width: 85%; /* Set slide width to 90% of the screen */
+        margin: 0 auto; /* Center the card horizontally */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    }
+
+    .testimonial-card:hover {
+        transform: none; /* Disable hover effect on mobile */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Keep shadow consistent */
+    }
 }

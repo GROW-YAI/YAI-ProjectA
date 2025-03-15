@@ -13,8 +13,8 @@ const Products = forwardRef((props, ref) => {
     return (
         <section ref={ref} id="products" className="section-4">
             <div>
-                <h1 style={{ textAlign: "center", fontSize: "40px", fontWeight: "bold" }}>
-                    Products in Our Catalogue
+                <h1 className="section-title"> {/* Add a class for the title */}
+                    Explore Our Catalogue
                 </h1>
 
                 <div className="products">
@@ -43,7 +43,7 @@ const Products = forwardRef((props, ref) => {
 
             <section className="product-sub">
                 <div className="content">
-                    <h1 style={{ width: "40%", paddingTop: "20px", fontSize: "40px" }}>
+                    <h1 style={{ width: "40%",  fontSize: "40px" }}>
                         Visit our store to find more in our catalogue
                     </h1>
                     <button
