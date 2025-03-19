@@ -40,7 +40,8 @@ const Navbar = () => {
             <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#contact">Contact Us</a></li>
           </ul>
-          <img src="/shopping-cart (2).png" alt="Logo 2" className="cart-icon" />
+          <img src="/shopping-cart (2).png" alt="Logo 2" className="cart-icon"  style={{ cursor: "pointer" }} // Add pointer cursor for better UX
+    onClick={() => window.open("https://paystack.shop/asaasepa-organic-fertilizer", "_blank")} />
         </div>
 
         <div className="mobile-right">
@@ -48,8 +49,9 @@ const Navbar = () => {
             <div className="bar bar1"></div>
             <div className="bar bar2"></div>
             <div className="bar bar3"></div>
-          </div>
-          <img src="/shopping-cart (2).png" alt="Cart" className="cart-icon-mobile" />
+          </div >
+          <img  src="/shopping-cart (2).png" alt="Cart" className="cart-icon-mobile"   style={{ cursor: "pointer" }} // Add pointer cursor for better UX
+    onClick={() => window.open("https://paystack.shop/asaasepa-organic-fertilizer", "_blank")}  />
         </div>
 
         {isMenuOpen && (

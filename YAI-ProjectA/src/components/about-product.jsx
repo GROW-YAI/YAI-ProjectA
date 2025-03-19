@@ -19,7 +19,8 @@ const AboutProduct = forwardRef((props, ref) => {
                         style={{ 
                             display: "inline-block", width: "150px", height: "50px", borderRadius: "30px", 
                             backgroundColor: "#559409", border: "none", color: "white", fontSize: "16px" 
-                        }}
+                        }}   onClick={() => window.open("https://paystack.shop/asaasepa-organic-fertilizer", "_blank")}
+
                     >
                         Visit Our Store
                     </button>
