@@ -164,7 +164,7 @@ button:hover {
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0;
-    width: 85%;
+    width: 90%;
     margin-left: 20px;
     padding-top: 20px;
   }
@@ -190,13 +190,23 @@ button:hover {
     flex-direction: column;
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    width: 100%;
+  }
+
   .form-group {
     display: flex;
     /* Keep flex layout */
     justify-content: space-between;
-    width: 100%;
+    width: 99.7%;
+    column-gap: 10px;
     /* Ensure form-group takes full width */
   }
+
+
 
   .form-group input {
     flex: 1;
@@ -207,14 +217,14 @@ button:hover {
 
   input,
   textarea {
-    width: 100%;
+    width: 93.5%;
     font-size: 14px;
     margin: 8px 0;
     display: block;
   }
 
   .contact-left {
-    padding-top: 20px;
+    padding-top: 50px;
     text-align: left;
   }
 
@@ -258,8 +268,7 @@ button:hover {
     margin-top: 20px !important;
   }
 
-  /* .copyright-section p {
-    font-size: 16px !important;
-    opacity: 0.9;
-  } */
+  .copyright-section p {
+    font-size: 14px !important;
+  }
 }
