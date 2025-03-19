@@ -56,9 +56,9 @@ const Navbar = () => {
           <div className="popup-menu">
             <ul>
               <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-              <li><a href="#product-info" onClick={toggleMenu}>About</a></li>
+              <li><a href="#about" onClick={toggleMenu}>About</a></li>
               <li><a href="#products" onClick={toggleMenu}>Products</a></li>
-              <li><a href="#testimonials" onClick={toggleMenu}>Services</a></li>
+              <li><a href="#testimonials" onClick={toggleMenu}>Testimonials</a></li>
               <li><a href="#contact" onClick={toggleMenu}>Contact Us</a></li>
             </ul>
           </div>

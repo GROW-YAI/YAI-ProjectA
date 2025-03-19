@@ -195,6 +195,7 @@ button:hover {
     flex-direction: column;
     padding-top: 20px;
     width: 100%;
+    gap: 10px;
   }
 
   .form-group {
@@ -202,7 +203,7 @@ button:hover {
     /* Keep flex layout */
     justify-content: space-between;
     width: 99.7%;
-    column-gap: 10px;
+    column-gap: 15px;
     /* Ensure form-group takes full width */
   }
 

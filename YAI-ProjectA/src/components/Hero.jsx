@@ -3,7 +3,7 @@ import "./styles/hero.css";
 
 const Hero = forwardRef((props, ref) => {
   return (
-    <section ref={ref} className="hero">
+    <section id="home" ref={ref} className="hero">
       <div className="hero-content">
         <div className="intro-text">
           <h1 style={{ fontFamily: "Inter, serif", fontSize: "30px", fontWeight: "200" }}>ASAASEPA</h1>
