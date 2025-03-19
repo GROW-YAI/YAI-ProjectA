@@ -21,7 +21,7 @@ const ContactUs = forwardRef((props, ref) => {
               <strong className="contact-heading">For more info, contact us via:</strong>
             </p>
             <div className="contact-info">
-              <p><FaPhone className="icon flip-icon" /> (233) 555-010-234</p>
+              <p><FaPhone className="icon flip-icon" /> +(233) 555-010-234</p>
               <p><FaEnvelope className="icon" /> attrams@gmail.com</p>
               <p><FaMapMarkerAlt className="icon" /> UMaT Campus, Tarkwa</p>
             </div>
@@ -38,7 +38,7 @@ const ContactUs = forwardRef((props, ref) => {
           </div>
 
           <div className="contact-right">
-            <p style={{ paddingBottom: "20px", fontSize: "20px", opacity: "0.9" }}>
+            <p className="message-title">
               <strong>Send message</strong>
             </p>
             <form>
