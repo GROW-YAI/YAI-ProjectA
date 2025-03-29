@@ -10,7 +10,7 @@ const Testimonials = forwardRef((props, ref) => {
             name: "John Doe",
             role: "CEO, Company A",
             comment: "This product has completely transformed our workflow. Highly recommended!",
-            image: "/image.png", 
+            // image: "/image.png", 
             rating: 5, 
         },
         {
@@ -18,7 +18,7 @@ const Testimonials = forwardRef((props, ref) => {
             name: "Jane Smith",
             role: "Marketing Manager, Company B",
             comment: "Excellent service and support. The team is always responsive and helpful.",
-            image: "/image.png", 
+            // image: "/image.png", 
             rating: 4, 
         },
         {
@@ -26,7 +26,7 @@ const Testimonials = forwardRef((props, ref) => {
             name: "Michael Johnson",
             role: "Founder, Company C",
             comment: "The quality of the product is outstanding. It exceeded our expectations.",
-            image: "/image.png", 
+            // image: "/image.png", 
             rating: 4.5, 
         },
     ];
