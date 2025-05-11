@@ -51,7 +51,7 @@ const Navbar = () => {
             <div className="bar bar3"></div>
           </div >
           <img  src="/shopping-cart (2).png" alt="Cart" className="cart-icon-mobile"   style={{ cursor: "pointer" }} // Add pointer cursor for better UX
-    onClick={() => window.open("https://paystack.shop/asaasepa-organic-fertilizer", "_blank")}  />
+    onClick={() => window.open("https://paystack.shop/asaasepa-organics", "_blank")}  />
         </div>
 
         {isMenuOpen && (
