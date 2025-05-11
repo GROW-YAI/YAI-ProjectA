@@ -56,7 +56,7 @@ const Products = forwardRef((props, ref) => {
                             color: "white",
                             fontSize: "16px",
                             marginTop: "20px",
-                        }} onClick={() => window.open("https://paystack.shop/asaasepa-organic-fertilizer", "_blank")} 
+                        }} onClick={() => window.open("https://paystack.shop/asaasepa-organics", "_blank")} 
                     >
                         Visit our Store
                     </button>

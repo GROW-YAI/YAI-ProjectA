@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Odeneho Group Real Estate</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.22.5/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    /* Placeholder for project images */
+    .project-image {
+      background: #e5e7eb;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #4b5563;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script type="text/babel">
+    function NavBar() {
+      return (
+        <nav className="bg-navy-900 text-white fixed w-full top-0 z-10 shadow-lg">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between h-16">
+              <div className="flex items-center">
+                <h1 className="text-2xl font-bold">Odeneho Group</h1>
+              </div>
+              <div className="flex items-center space-x-4">
+                <a href="#home" className="hover:text-gold-400">Home</a>
+                <a href="#about" className="hover:text-gold-400">About</a>
+                <a href="#services" className="hover:text-gold-400">Services</a>
+                <a href="#projects" className="hover:text-gold-400">Projects</a>
+                <a href="#sustainability" className="hover:text-gold-400">Sustainability</a>
+                <a href="#partnerships" className="hover:text-gold-400">Partnerships</a>
+                <a href="#contact" className="hover:text-gold-400">Contact</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      );
+    }
+
+    function HeroSection() {
+      return (
+        <section id="home" className="relative bg-gray-200 h-screen flex items-center justify-center">
+          <div className="absolute inset-0 bg-navy-900 opacity-50"></div>
+          <div className="relative text-center text-white max-w-3xl px-4">
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to Odeneho Group's Real Estate Division</h1>
+            <p className="text-lg md:text-xl mb-6">Redefining the Landscape of Possibilities with Excellence and Innovation</p>
+            <div className="space-x-4">
+              <a href="#services" className="bg-gold-400 text-navy-900 px-6 py-3 rounded-md hover:bg-gold-500">Explore Our Services</a>
+              <a href="#projects" className="bg-white text-navy-900 px-6 py-3 rounded-md hover:bg-gray-100">View Our Projects</a>
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function ServicesSection() {
+      const services = [
+        {
+          title: "Constructions and Civil Engineering",
+          items: [
+            "General Building & Construction",
+            "Civil Works, Plumbing, Water and Electrical Works",
+            "Drains & Culverts, Classroom Blocks, KVIP Toilets",
+            "Interior Design and Decoration",
+          ],
+        },
+        {
+          title: "Infrastructure",
+          items: [
+            "Real Estate Development",
+            "Major Developmental Building",
+            "Tourism Development (Hotels, Restaurants, Entertainment Parks)",
+          ],
+        },
+        {
+          title: "EPC",
+          items: [
+            "Engineering, Procurement, Construction",
+            "Outsourcing of Financiers and Investors",
+          ],
+        },
+        {
+          title: "Additional Services",
+          items: [
+            "Feasibility Studies",
+            "Design and Contract Documentation",
+            "Construction Supervision",
+            "Maintenance and Management of Works",
+            "Investment & Finance",
+          ],
+        },
+      ];
+
+      return (
+        <section id="services" className="py-16 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Our Services</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {services.map((service, index) => (
+                <div key={index} className="p-6 bg-gray-100 rounded-lg shadow-md">
+                  <h3 className="text-xl font-semibold text-navy-900 mb-4">{service.title}</h3>
+                  <ul className="list-disc pl-5 space-y-2 text-gray-700">
+                    {service.items.map((item, idx) => (
+                      <li key={idx}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function ProjectsSection() {
+      const completedProjects = [
+        { name: "Healthcare Center", description: "State-of-the-art facility enhancing community health." },
+        { name: "Educational Institution", description: "Modern classroom blocks for quality education." },
+      ];
+      const upcomingProjects = [
+        { name: "Sustainable Housing", description: "Eco-friendly residential development." },
+        { name: "Tourism Park", description: "Innovative entertainment and leisure hub." },
+      ];
+
+      return (
+        <section id="projects" className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-navy-900 mb-8 text-center">Our Projects</h2>
+            <h3 className="text-2xl font-semibold text-navy-900 mb-4">Completed Projects</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+              {completedProjects.map((project, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="project-image">Project Image Placeholder</div>
+                  <div className="p-6">
+                    <h4 className="text-lg font-semibold text-navy-900">{project.name}</h4>
+                    <p className="text-gray-600">{project.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <h3 className="text-2xl font-semibold text-navy-900 mb-4">Upcoming Projects</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {upcomingProjects.map((project, index) => (
+                <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+                  <div className="project-image">Project Image Placeholder</div>
+                  <div className="p-6">
+                    <h4 className="text-lg font-semibold text-navy-900">{project.name}</h4>
+                    <p className="text-gray-600">{project.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      );
+    }
+
+    function Footer() {
+      return (
+        <footer className="bg-navy-900 text-white py-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Odeneho Group</h3>
+                <p className="text-gray-300">Redefining the landscape of possibilities with excellence and innovation.</p>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+                <ul className="space-y-2">
+                  <li><a href="#services" className="hover:text-gold-400">Services</a></li>
+                  <li><a href="#projects" className="hover:text-gold-400">Projects</a></li>
+                  <li><a href="#contact" className="hover:text-gold-400">Contact</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+                <p className="text-gray-300">Email: info@odenehogroup.com</p>
+                <p className="text-gray-300">Phone: +123-456-7890</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      );
+    }
+
+    function App() {
+      return (
+        <div>
+          <NavBar />
+          <div className="pt-16">
+            <HeroSection />
+            <ServicesSection />
+            <ProjectsSection />
+            <Footer />
+          </div>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>
