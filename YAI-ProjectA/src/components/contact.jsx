@@ -7,7 +7,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaTiktok,
-  FaLinkedin
+  FaLinkedin,
 } from "react-icons/fa";
 
 const ContactUs = forwardRef((props, ref) => {
@@ -41,7 +41,6 @@ const ContactUs = forwardRef((props, ref) => {
                 </strong>
               </p>
               <div className="social-icons">
-                {/* Facebook */}
                 <a
                   href="https://www.facebook.com/share/19pHroQxEE/?mibextid=wwXIfr"
                   target="_blank"
@@ -49,8 +48,6 @@ const ContactUs = forwardRef((props, ref) => {
                 >
                   <FaFacebook className="icon" />
                 </a>
-
-                {/* Instagram */}
                 <a
                   href="https://www.instagram.com/asaasepa_?igsh=MmE5ZnlpN2Y0MXdp"
                   target="_blank"
@@ -58,12 +55,20 @@ const ContactUs = forwardRef((props, ref) => {
                 >
                   <FaInstagram className="icon" />
                 </a>
-
-                {/* TikTok (no link yet) */}
-                <FaTiktok className="icon" />
-
-                {/* LinkedIn (no link yet) */}
-                <FaLinkedin className="icon" />
+                <a
+                  href="https://www.tiktok.com/@asaase658?is_from_webapp=1&sender_device=pc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTiktok className="icon" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/company/asaasepa-organic-fertilizer/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin className="icon" />
+                </a>
               </div>
             </div>
           </div>
