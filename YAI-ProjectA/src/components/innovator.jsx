@@ -6,7 +6,7 @@ const Innovator = () => {
         <section className="innovator-section">
             <div className="innovator-container">
                 <div className="innovator-image">
-                    <img src="/ino.JPG" alt="Innovator" />
+                    <img src="/ino.jpg" alt="Innovator" />
                 </div>
 
                 <div className="innovator-content">
