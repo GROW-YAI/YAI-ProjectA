@@ -27,7 +27,7 @@ const ContactUs = forwardRef((props, ref) => {
                 <FaPhone className="icon flip-icon" /> +(233) 555-010-234
               </p>
               <p>
-                <FaEnvelope className="icon" /> attrams@gmail.com
+                <FaEnvelope className="icon" /> asaasepaorganics@gmail.com
               </p>
               <p>
                 <FaMapMarkerAlt className="icon" /> UMaT Campus, Tarkwa
@@ -56,7 +56,7 @@ const ContactUs = forwardRef((props, ref) => {
                   <FaInstagram className="icon" />
                 </a>
                 <a
-                  href="https://www.tiktok.com/@asaase658?is_from_webapp=1&sender_device=pc"
+                  href="https://www.tiktok.com/@asaasepafertilizer?is_from_webapp=1&sender_device=pc"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
