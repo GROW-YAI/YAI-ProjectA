@@ -69,6 +69,7 @@
   color: #444;
   position: relative;
   padding-left: 12px;
+  text-align: justify;
 }
 
 /* Large decorative quotation mark via pseudo-element */
