@@ -2,31 +2,34 @@ import React, { forwardRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 import "./styles/testimonials.css"; 
+import test1 from '../../public/test1.jpg';
+import test2 from '../../public/test2.jpg';
+import test3 from '../../public/test3.jpg';
 
 const Testimonials = forwardRef((props, ref) => {
     const testimonials = [
         {
             id: 1,
-            name: "John Doe",
-            role: "CEO, Company A",
+            name: "Mama Rosina",
+            role: "Farmer, Western Region of Ghana",
             comment: "This product has completely transformed our workflow. Highly recommended!",
-            // image: "/image.png", 
+            image: test2, 
             rating: 5, 
         },
         {
             id: 2,
-            name: "Jane Smith",
-            role: "Marketing Manager, Company B",
+            name: "Laadi Tarati",
+            role: "Maize, Sorghum, Millet and Rice farmer, Northern Region of Ghana",
             comment: "Excellent service and support. The team is always responsive and helpful.",
-            // image: "/image.png", 
+            image: test1, 
             rating: 4, 
         },
         {
             id: 3,
-            name: "Michael Johnson",
-            role: "Founder, Company C",
+            name: "Joseph Ayidoni",
+            role: "Farmer, Northern Region of Ghana",
             comment: "The quality of the product is outstanding. It exceeded our expectations.",
-            // image: "/image.png", 
+            image: test3, 
             rating: 4.5, 
         },
     ];
