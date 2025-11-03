@@ -40,7 +40,7 @@ const Hero = forwardRef((props, ref) => {
           </button>
         </div>
         <div className="image-container">
-          <img src="/asaasepa-no_bg11.png" alt="Organic Fertilizer" />
+          <img src="/asaasepa3bg.png" alt="Organic Fertilizer" />
         </div>
       </div>
     </section>

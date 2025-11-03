@@ -1,13 +1,17 @@
 import React, { forwardRef } from "react";
 import "./styles/our-products.css";
+import firstImage from '../../public/asaasepa1.jpg';
+import secondImage from '../../public/asaasepa2.jpg';
+import thirdImage from '../../public/asaasepa3.jpg';
+import fourthImage from '../../public/asaasepa4.jpg';
 
 const Products = forwardRef((props, ref) => {
     // Array of product data
     const products = [
-        { id: 1, name: "Dry banana peels", image: "/fert-nbg2.png" },
-        { id: 2, name: "Dry mango peels", image: "/fert-nbg2.png" },
-        { id: 3, name: "Dry pineapple peels", image: "/fert-nbg2.png" },
-        { id: 4, name: "Dry orange peels", image: "/fert-nbg2.png" },
+        { id: 1, name: "Dry banana peels", image: firstImage },
+        { id: 2, name: "Dry mango peels", image: secondImage },
+        { id: 3, name: "Dry pineapple peels", image: thirdImage },
+        { id: 4, name: "Dry orange peels", image: fourthImage },
     ];
 
     return (
@@ -29,6 +33,7 @@ const Products = forwardRef((props, ref) => {
                                 alignItems: "center",
                                 justifyContent: "space-between",
                                 minHeight: "350px",
+                                
                             }}
                         >
                             <div style={{ alignSelf: "flex-end", padding: "10px" }}></div>
