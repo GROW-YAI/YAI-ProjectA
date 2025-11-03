@@ -1,13 +1,12 @@
 import React from "react";
 import "./styles/innovator.css";
-import ino from '../../public/ino.jpg'
 
 const Innovator = () => {
     return (
         <section className="innovator-section">
             <div className="innovator-container">
                 <div className="innovator-image">
-                    <img src={ino} alt="Innovator" />
+                    <img src='/ino.jpg' alt="Innovator" />
                 </div>
 
                 <div className="innovator-content">
